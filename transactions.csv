@@ -1,0 +1,6 @@
+sep=;
+Account number;Card number;Account/Cardholder;Purchase date;Booking text;Sector;Amount;Original currency;Rate;Currency;Debit;Credit;Booked
+1;2;PETER TATKOWSKI;16.01.2024;SBB CFF FFS;SBB;10;CHF;;CHF;;;
+
+;;;;Total per currency;;;;;;;;Total
+;;;;Total card bookings;;;;;CHF;1;2;3
