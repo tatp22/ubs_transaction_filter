@@ -7,11 +7,32 @@ Because this feature is not available on the website, this repo is a little
 script to filter out transactions by regexp and start/end dates, showing
 you your total.
 
+## Extracting your transaction data
+
+To extract your transaction data, go to your UBS E-Banking page and go to
+the credit card which you want to analyze. Click the green Excel button on
+the top of the page like in the picture above. There you will get a file
+called `transactions.csv`. Download it and replace the `transactions.csv`
+that is in this repo.
+
+If run correctly, it should have the same format as the one in this repo
+(where I put a dummy credit card transaction). Note it should also have
+the encoding `cp1252`, since I believe that this export is created from
+some kind of Windows computer.
+
+## Running the command
+
 To run, simply do the following to get all transactions that match the
 regexp `SBB` or `CFF` for example:
 
 ```python
 python read_tx.py --regexp 'SBB|CFF'
+```
+
+Output on example data:
+
+```
+The total amount spend on all transactions matching the regexp SBB|CFF is 10.00.
 ```
 
 All list of functions are here:

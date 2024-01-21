@@ -77,8 +77,6 @@ def main():
     total = 0
     with open(args.path, "rt", encoding="cp1252") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=args.delimiter)
-        print(type(csv_reader))
-        return
         for row in safe_iter(csv_reader):
             purchase_date = datetime.strptime(row[3], "%d.%m.%Y")
             booking_text = row[4]
